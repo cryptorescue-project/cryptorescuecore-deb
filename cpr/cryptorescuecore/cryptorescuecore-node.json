@@ -1,0 +1,37 @@
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "cryptorescued",
+    "web",
+    "insight-api",
+    "insight-ui"
+  ],
+  "allowedOriginRegexp": "^https://network\\.cryptorescue.org$",
+  "messageLog": "",
+  "servicesConfig": {
+    "web": {
+      "disablePolling": true
+    },
+    "insight-ui": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-api": {
+      "routePrefix": "api",
+      "coinTicker" : "https://api.coinmarketcap.com/v1/ticker/cryptorescue/?convert=USD",
+      "coinShort": "CPR"
+    },
+    "cryptorescued": {
+      "sendTxLog": "/opt/under/cryptorescuecore/home/.cryptorescuecore/pushtx.log",
+      "spawn": {
+        "datadir": "/opt/under/cryptorescuecore/home/.cryptorescuecore/data",
+        "exec": "/opt/under/cryptorescuecore/cryptorescuecore/node_modules/cryptorescuecore-node/bin/cryptorescued",
+        "rpcqueue": 1000,
+        "rpcport": 8392,
+        "zmqpubrawtx": "tcp://127.0.0.1:28332",
+        "zmqpubhashblock": "tcp://127.0.0.1:28332"
+      }
+    }
+  }
+}

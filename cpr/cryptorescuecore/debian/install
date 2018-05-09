@@ -1,0 +1,6 @@
+cryptorescuecore /opt/under/cryptorescuecore
+cryptorescuecore-cli /usr/bin
+cryptorescuecore-daemon /usr/bin
+cryptorescue.conf /opt/under/cryptorescuecore/home/.cryptorescuecore/data
+cryptorescuecore-node.json /opt/under/cryptorescuecore/home/.cryptorescuecore
+nginx-cryptorescuecore /etc/nginx/sites-available

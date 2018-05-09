@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+INSTALL_PATH="/opt/under/cryptorescuecore/"
+BIN=$(realpath "$INSTALL_PATH"/cryptorescuecore/node_modules/cryptorescuecore-node/bin/cryptorescuecore-*/bin/)
+DATA="$INSTALL_PATH/home/.cryptorescuecore/data"
+CONF="$DATA/cryptorescue.conf"
+
+exec sudo -u cryptorescuecore "$BIN/cryptorescued" --conf="$CONF" --datadir="$DATA" "$@"
