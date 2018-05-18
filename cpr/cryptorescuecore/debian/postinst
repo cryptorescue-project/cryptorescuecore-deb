@@ -2,9 +2,9 @@
 
 case "$1" in
 	configure)
-		adduser --system --home /opt/under/cryptorescuecore/home \
-			--quiet --gecos "under cryptorescuecore" cryptorescuecore
-		chown -R cryptorescuecore /opt/under/cryptorescuecore/home
+		adduser --system --home /opt/cpr/cryptorescuecore/home \
+			--quiet --gecos "cpr cryptorescuecore" cryptorescuecore
+		chown -R cryptorescuecore /opt/cpr/cryptorescuecore/home
 		;;
 	abort-upgrade|abort-remove|abort-deconfigure)
 	;;

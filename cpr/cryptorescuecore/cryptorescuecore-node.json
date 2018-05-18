@@ -23,10 +23,10 @@
       "coinShort": "CPR"
     },
     "cryptorescued": {
-      "sendTxLog": "/opt/under/cryptorescuecore/home/.cryptorescuecore/pushtx.log",
+      "sendTxLog": "/opt/cpr/cryptorescuecore/home/.cryptorescuecore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/under/cryptorescuecore/home/.cryptorescuecore/data",
-        "exec": "/opt/under/cryptorescuecore/cryptorescuecore/node_modules/cryptorescuecore-node/bin/cryptorescued",
+        "datadir": "/opt/cpr/cryptorescuecore/home/.cryptorescuecore/data",
+        "exec": "/opt/cpr/cryptorescuecore/cryptorescuecore/node_modules/cryptorescuecore-node/bin/cryptorescued",
         "rpcqueue": 1000,
         "rpcport": 8392,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",

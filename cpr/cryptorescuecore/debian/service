@@ -1,13 +1,13 @@
 [Unit]
-Description=under cryptorescuecore
+Description=cpr cryptorescuecore
 
 [Service]
-ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /opt/under/cryptorescuecore/cryptorescuecore/bin/cryptorescuecored
+ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /opt/cpr/cryptorescuecore/cryptorescuecore/bin/cryptorescuecored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900
 User=cryptorescuecore
-WorkingDirectory=/opt/under/cryptorescuecore/home
+WorkingDirectory=/opt/cpr/cryptorescuecore/home
 
 [Install]
 WantedBy=multi-user.target

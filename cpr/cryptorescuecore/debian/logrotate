@@ -1,4 +1,4 @@
-/opt/under/cryptorescuecore/home/.cryptorescuecore/data/debug.log {
+/opt/cpr/cryptorescuecore/home/.cryptorescuecore/data/debug.log {
         rotate 7
         daily
         compress

@@ -1,3 +1,3 @@
-/opt/under/cryptorescuecore/home/.cryptorescuecore/data/cryptorescue.conf
-/opt/under/cryptorescuecore/home/.cryptorescuecore/cryptorescuecore-node.json
+/opt/cpr/cryptorescuecore/home/.cryptorescuecore/data/cryptorescue.conf
+/opt/cpr/cryptorescuecore/home/.cryptorescuecore/cryptorescuecore-node.json
 /etc/nginx/sites-available/nginx-cryptorescuecore
